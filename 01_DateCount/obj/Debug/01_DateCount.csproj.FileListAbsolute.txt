@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\MyProjects\01_DateCount\bin\Debug\01_DateCount.exe.config
+C:\Users\User\source\repos\MyProjects\01_DateCount\bin\Debug\01_DateCount.exe
+C:\Users\User\source\repos\MyProjects\01_DateCount\bin\Debug\01_DateCount.pdb
+C:\Users\User\source\repos\MyProjects\01_DateCount\obj\Debug\01_DateCount.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\MyProjects\01_DateCount\obj\Debug\01_DateCount.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\MyProjects\01_DateCount\obj\Debug\01_DateCount.exe
+C:\Users\User\source\repos\MyProjects\01_DateCount\obj\Debug\01_DateCount.pdb
