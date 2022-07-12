@@ -47,9 +47,7 @@ namespace _01_DateCount
             if (customers.Length > 0)
                 maxValue = customers[0];
             for (int i = 0; i < customers.Length; i++)
-            {
-                sum += customers[i];
-               
+            {                            
                 if (maxValue < customers[i])
                     maxValue = customers[i];
             }
@@ -57,7 +55,26 @@ namespace _01_DateCount
                 return customers.Max();
             else if (customers.Length == 0)
                 return 0;
-            else { return sum / n; }
+            else if (n == 1)
+            {
+                for (int i = 0; i < customers.Length; i++)
+                {
+                    sum += customers[i];
+                }
+                return sum;
+            }
+            else
+            {
+                int[] total = new int[n];
+
+                for (int i = 0; i < customers.Length; i++)
+                {
+                    total[0] += customers[i];
+                    Array.Sort(total);                
+                }           
+                return total[n - 1];
+
+            }            
             
         }
         static void Main(string[] args)
@@ -72,10 +89,10 @@ namespace _01_DateCount
             //Console.WriteLine(strDay);
 
 
-            string str = Reverse("world");
-            Console.WriteLine(str);
+            //string str = Reverse("world");
+            //Console.WriteLine(str);
 
-            long g = QueueTime(new int[] {  }, 250);
+            long g = QueueTime(new int[] {10,3,5,7}, 3);
             Console.WriteLine(g);
             Console.ReadLine();
         }
