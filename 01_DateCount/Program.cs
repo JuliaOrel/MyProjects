@@ -77,6 +77,18 @@ namespace _01_DateCount
             }            
             
         }
+
+        public static int[] reverseList(int[] list)
+        {
+            int[] reverseList = new int[list.Length];
+            int j = 0;
+            for (int i = list.Length-1; i >=0; i--)
+            {
+                reverseList[j] = list[i];
+                j++;
+            }
+            return reverseList;
+        }
         static void Main(string[] args)
         {
 
@@ -92,8 +104,17 @@ namespace _01_DateCount
             //string str = Reverse("world");
             //Console.WriteLine(str);
 
-            long g = QueueTime(new int[] {10,3,5,7}, 3);
-            Console.WriteLine(g);
+            //long g = QueueTime(new int[] {10,3,5,7}, 3);
+            //Console.WriteLine(g);
+            //Console.ReadLine();
+            int[] list = new int[5] {1,2,3,4,5};
+            int[]reverse=reverseList(list);
+            foreach (int item in reverse)
+            {
+                Console.WriteLine(item);
+                Console.WriteLine();
+            }
+
             Console.ReadLine();
         }
     }
