@@ -8,6 +8,33 @@ namespace _01_DateCount
 {
     class Program
     {
+        public static long[] Digitize(long n)
+        {
+
+         if(n==0)
+            { long[] array = new long[1] {0};
+                return array;
+            }
+
+          long digit = 0;
+            List<long> longList = new List<long>();
+            while (n != 0)
+            {
+                digit=n% 10;
+                n /= 10;
+                longList.Add(digit);
+
+            }
+            long[] arr = new long[longList.Count];
+            for (int i = 0; i < longList.Count; i++)
+            {
+                arr[i] = longList[i];
+            }
+            return arr;
+            
+
+            // Code goes here
+        }
         public static void countdays(DateTime d)
         {
             var todayDate = DateTime.Today;
@@ -107,13 +134,17 @@ namespace _01_DateCount
             //long g = QueueTime(new int[] {10,3,5,7}, 3);
             //Console.WriteLine(g);
             //Console.ReadLine();
-            int[] list = new int[5] {1,2,3,4,5};
-            int[]reverse=reverseList(list);
-            foreach (int item in reverse)
-            {
-                Console.WriteLine(item);
-                Console.WriteLine();
-            }
+
+            //int[] list = new int[5] {1,2,3,4,5};
+            //int[]reverse=reverseList(list);
+            //foreach (int item in reverse)
+            //{
+            //    Console.WriteLine(item);
+            //    Console.WriteLine();
+            //}
+
+            Digitize(0);
+            
 
             Console.ReadLine();
         }
