@@ -8,6 +8,17 @@ namespace _01_DateCount
 {
     class Program
     {
+        public static string Greet(string name)
+        {
+            string greeting = "Hello, how are you doing?";
+            char ch = ',';
+            string name1 = ' ' + name;
+            int indexOfChar = greeting.IndexOf(ch);
+            greeting = greeting.Insert(indexOfChar + 1, name1);
+            return greeting;
+            
+            //throw new NotImplementedException("Greet is not implemented.");
+        } 
         public static long[] Digitize(long n)
         {
 
@@ -143,7 +154,9 @@ namespace _01_DateCount
             //    Console.WriteLine();
             //}
 
-            Digitize(0);
+            //Digitize(0);
+
+            Greet("Julia");
             
 
             Console.ReadLine();

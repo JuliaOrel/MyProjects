@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\01_DateCount"
   ],
-  "SelectedNode": "\\01_DateCount.sln",
+  "SelectedNode": "\\01_DateCount\\01_DateCount.sln",
   "PreviewInSolutionExplorer": false
 }
