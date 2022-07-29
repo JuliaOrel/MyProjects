@@ -8,6 +8,39 @@ namespace _01_DateCount
 {
     class Program
     {
+
+        public static int[] CountPositivesSumNegatives(int[] input)
+        {
+            if (input is null)
+                return new int[] { };
+
+            if (input.Length == 0)
+                return new int[] { };
+
+            if (input.Length>0)
+            {
+                int sum = 0;
+                int count = 0;
+                for (int i = 0; i < input.Length; i++)
+                {
+                    if (input[i] > 0)
+                    {
+                        count++;
+                    }
+                    if (input[i] < 0)
+                        sum += input[i];
+                }
+                int[] arr2 = new int[2] { count, sum };
+                return arr2;
+            }
+            return new int[] { };
+
+
+
+
+
+
+        }
         public static string Greet(string name)
         {
             string greeting = "Hello, how are you doing?";
@@ -156,7 +189,11 @@ namespace _01_DateCount
 
             //Digitize(0);
 
-            Greet("Julia");
+            //Greet("Julia");
+
+            int[] array = new int[8] {1,2,3,4,-4,-5,-6,-7 };
+            int[] i = new int[] { };
+            CountPositivesSumNegatives(null);
             
 
             Console.ReadLine();
